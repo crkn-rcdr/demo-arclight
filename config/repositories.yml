@@ -1,0 +1,12 @@
+InU-aaamc:
+  name: 'Indiana University, Archives of African American Music and Culture (AAAMC)'
+  description: ''
+  contact_html: |
+    <div class="al-repository-contact-phone">812-855-8547</div>
+    <div class="al-repository-contact-info"><a href="mailto:aaamc@indiana.edu">aaamc@indiana.edu</a></div>
+  location_html: |
+    <div class="al-repository-street-address-building">Smith Research Center, Rooms 180-181</div>
+    <div class="al-repository-street-address-address1">2805 E. 10th St.</div>
+    <div class="al-repository-street-address-city_state_zip_country">Bloomington, IN 47408-2601</div>
+  thumbnail_url: 'https://lh5.googleusercontent.com/p/AF1QipMVL1KyiNyXC-CbBFDAmvyagCCIV3ioFFCg0POu=w160-h160-k-no'
+  url: 'https://aaamc.indiana.edu/'

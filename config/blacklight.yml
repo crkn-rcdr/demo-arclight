@@ -1,0 +1,10 @@
+load_defaults: 8.1.0
+development:
+  adapter: solr
+  url: <%= ENV['SOLR_URL'] || "http://arclightsolr:8983/solr/arclight" %>
+test: &test
+  adapter: solr
+  url: <%= ENV['SOLR_URL'] || "http://arclightsolr:8983/solr/arclight" %>
+production:
+  adapter: solr
+  url: <%= ENV['SOLR_URL'] || "http://arclightsolr:8983/solr/arclight" %>

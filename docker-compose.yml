@@ -1,0 +1,28 @@
+version: '3'
+services:
+  arclight:
+    environment:
+      - SWIFT_USERNAME=xxx
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - arclightsolr
+    volumes:
+      - /root/demo-blacklight:/app
+    networks:
+      - arclighttest
+  arclightsolr:
+    image: solr
+    ports:
+     - "8983:8983"
+    volumes:
+      - data:/var/solr
+    networks:
+      - arclighttest
+volumes:
+  data:
+networks:
+  arclighttest:
