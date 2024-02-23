@@ -46,7 +46,7 @@ FILE=eads/2.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
 FILE=eads/3.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
 
 Updates
-git pull && docker compose build --no-cache && docker compose up --force-recreate
+git pull && docker compose build --no-cache && docker compose up -d --force-recreate 
 
 Clear images
 stop $(docker ps -a -q)
