@@ -10,15 +10,3 @@ heritage:
     <div class="al-repository-street-address-city_state_zip_country">Ottawa, ON K1A 0N4, Canada</div>
   thumbnail_url: 'https://www.crkn-rcdr.ca/sites/default/themes/crkn/images/logo/crkn-logo.svg'
   url: 'https://www.crkn-rcdr.ca/en'
-InU-aaamc:
-  name: 'Indiana University, Archives of African American Music and Culture (AAAMC)'
-  description: ''
-  contact_html: |
-    <div class="al-repository-contact-phone">812-855-8547</div>
-    <div class="al-repository-contact-info"><a href="mailto:aaamc@indiana.edu">aaamc@indiana.edu</a></div>
-  location_html: |
-    <div class="al-repository-street-address-building">Smith Research Center, Rooms 180-181</div>
-    <div class="al-repository-street-address-address1">2805 E. 10th St.</div>
-    <div class="al-repository-street-address-city_state_zip_country">Bloomington, IN 47408-2601</div>
-  thumbnail_url: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIndiana_University&psig=AOvVaw3sk2SvazrIwv1vz0FDQxkd&ust=1708790399238000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKjmx8LqwYQDFQAAAAAdAAAAABAE'
-  url: 'https://aaamc.indiana.edu/'

@@ -52,3 +52,6 @@ Clear images
 stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 docker volume rm demo-arclight_data
+
+
+FILE=/app/public/uploads/1c986e0fe11.txt REPOSITORY_ID=heritage bundle exec rake arclight:index
