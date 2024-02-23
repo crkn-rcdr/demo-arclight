@@ -22,17 +22,33 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Local
 (first only) docker exec -it demo-arclight-arclightsolr-1 solr create_core -c arclight
-docker cp solr/managed-schema.xml demo-arclight-arclightsolr-1:/var/solr/data/arclight/conf/managed-schema.xml
-docker compose up --force-recreate
+(first only) docker cp solr/managed-schema.xml demo-arclight-arclightsolr-1:/var/solr/data/arclight/conf/managed-schema.xml
+(first only) docker compose up --force-recreate
 
+Local add data example:
 docker exec -it demo-arclight-arclight-1 bash
 FILE=eads/1.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
 FILE=eads/2.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
 FILE=eads/3.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
 
-docker compose build --no-cache && docker compose up --force-recreate
+Oma
+(first only) docker exec -it d697f9ff6d00 solr create_core -c arclight
+(first only) docker cp solr/managed-schema.xml d697f9ff6d00:/var/solr/data/arclight/conf/managed-schema.xml
+(first only) docker container restart d697f9ff6d00
+(first only) docker logs d697f9ff6d00
 
+Oma add data example:
+docker exec -it demo-arclight-arclight-1 bash
+FILE=eads/1.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
+FILE=eads/2.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
+FILE=eads/3.xml REPOSITORY_ID=InU-aaamc bundle exec rake arclight:index
+
+Updates
+git pull && docker compose build --no-cache && docker compose up --force-recreate
+
+Clear images
 stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 docker volume rm demo-arclight_data
