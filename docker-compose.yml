@@ -8,8 +8,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3030:3000"
-    depends_on:
-      - arclightsolr
     volumes:
       - /root/demo-blacklight:/app
     networks:
